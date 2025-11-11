@@ -73,7 +73,7 @@ export class UsersService {
 
   private transformUser(user: UserDocument): User {
     return {
-      // Cast _id to Types.ObjectId to fix the type error
+     
       id: (user._id as Types.ObjectId).toString(),
       name: user.name,
       email: user.email,
