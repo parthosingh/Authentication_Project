@@ -22,7 +22,7 @@ export class User {
   name: string;
 
   @Field()
-  @Prop({ required: true, unique: true })  // ✅ This is fine
+  @Prop({ required: true, unique: true }) 
   email: string;
 
   @Prop({ required: true })
